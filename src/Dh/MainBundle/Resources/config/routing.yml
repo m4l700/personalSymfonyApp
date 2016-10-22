@@ -1,0 +1,7 @@
+dh_main_homepage:
+    path:     /
+    defaults: { _controller: DhMainBundle:Default:index }
+
+dh_main_contact:
+    path:     /contact
+    defaults: { _controller: DhMainBundle:Default:contact}
