@@ -131,4 +131,9 @@ span.lastName {
     height: 100%;
     width: 100%;
     background: #ec6f4f;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
 }

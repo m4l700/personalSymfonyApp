@@ -1,7 +1,7 @@
-Dh\BlogBundle\Entity\BlogPost:
+Dh\BlogBundle\Entity\BlogPostEntity:
     type: entity
     table: null
-    repositoryClass: Dh\BlogBundle\Repository\BlogPostRepository
+    repositoryClass: Dh\BlogBundle\Repository\BlogPostEntityRepository
     id:
         id:
             type: integer
@@ -11,14 +11,17 @@ Dh\BlogBundle\Entity\BlogPost:
     fields:
         title:
             type: string
-            length: '150'
+            length: 255
         content:
             type: text
         category:
             type: string
-            length: '150'
+            length: 255
             nullable: true
         date:
             type: datetime
+        imgurl:
+            type: string
+            length: 255
             nullable: true
     lifecycleCallbacks: {  }

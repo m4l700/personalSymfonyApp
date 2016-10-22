@@ -9,10 +9,12 @@
        				<span class="lastName">Holleman</span>
        			</div>
        			<div class="postsWrapper">
-       			{% for posts in post %}	
+       			{% for posts in post %}			
        				<div class="homePost">
-       					<div class="title">{{posts.title}}</div>	
-       				</div>		
+       				<a class="clickablepost" href="/blog/{{posts.id}}">
+       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;">{{posts.title}}</div>	
+       				</a>
+       				</div>			
        			{% endfor %}
        			</div>
        		</section> <!-- Home -->		

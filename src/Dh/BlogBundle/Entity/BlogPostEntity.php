@@ -3,9 +3,9 @@
 namespace Dh\BlogBundle\Entity;
 
 /**
- * BlogPost
+ * BlogPostEntity
  */
-class BlogPost
+class BlogPostEntity
 {
     /**
      * @var int
@@ -34,14 +34,12 @@ class BlogPost
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="imgUrl", type="text")
      */
-    private $imgUrl;
+    private $imgurl;
 
 
-    /*
-*     * Get id
+    /**
+     * Get id
      *
      * @return int
      */
@@ -55,7 +53,7 @@ class BlogPost
      *
      * @param string $title
      *
-     * @return BlogPost
+     * @return BlogPostEntity
      */
     public function setTitle($title)
     {
@@ -79,7 +77,7 @@ class BlogPost
      *
      * @param string $content
      *
-     * @return BlogPost
+     * @return BlogPostEntity
      */
     public function setContent($content)
     {
@@ -103,7 +101,7 @@ class BlogPost
      *
      * @param string $category
      *
-     * @return BlogPost
+     * @return BlogPostEntity
      */
     public function setCategory($category)
     {
@@ -127,7 +125,7 @@ class BlogPost
      *
      * @param \DateTime $date
      *
-     * @return BlogPost
+     * @return BlogPostEntity
      */
     public function setDate($date)
     {
@@ -145,4 +143,29 @@ class BlogPost
     {
         return $this->date;
     }
+
+    /**
+     * Set imgurl
+     *
+     * @param string $imgurl
+     *
+     * @return BlogPostEntity
+     */
+    public function setImgurl($imgurl)
+    {
+        $this->imgurl = $imgurl;
+
+        return $this;
+    }
+
+    /**
+     * Get imgurl
+     *
+     * @return string
+     */
+    public function getImgurl()
+    {
+        return $this->imgurl;
+    }
 }
+

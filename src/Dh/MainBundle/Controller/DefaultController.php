@@ -10,7 +10,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
     	$repositoryPost = $this->getDoctrine()
-    		->getRepository('DhBlogBundle:BlogPost');
+    		->getRepository('DhBlogBundle:BlogPostEntity');
     	$post = $repositoryPost->findByCategory('homepage');
 
     	$repositoryImage = $this->getDoctrine()
