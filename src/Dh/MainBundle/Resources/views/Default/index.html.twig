@@ -2,25 +2,31 @@
 
 {% block body %}
     <div id="contentWrapper"> <!-- Content -->
-        <div id="container">    
-       		<section class="sectionStyle frontPage" id="home">
+        <div id="container">   
+        	<a href="#home" class="fa fa-arrow-up arrow" aria-hidden="true"></a> 
+        	<a href="#about" class="fa fa-arrow-down arrow" aria-hidden="true"></a>
+       		<section class="sectionStyle frontPage" id="home"> <!-- Home -->
        			<div class="nameWrapper">
+       				<span class="firstsection">I am</span>
        				<span class="firstName">David</span>
        				<span class="lastName">Holleman</span>
        			</div>
        			<div class="postsWrapper">
        			{% for posts in post %}			
        				<div class="homePost">
-       				<a class="clickablepost" href="/blog/{{posts.id}}">
+       				<a class="clickablepost" href="/blog/posts/{{posts.id}}">
        					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;">{{posts.title}}</div>	
        				</a>
        				</div>			
        			{% endfor %}
        			</div>
-       		</section> <!-- Home -->		
+       		</section> 	<!-- Home -->	
         </div>
         <div id="container">    
-       		<section class="sectionStyle about" id="about">About</section>  <!-- About -->		
+       		<section class="sectionStyle about" id="about"> <!-- About -->	
+       			<div class="aboutLeft">Left</div>
+       			<div class="aboutRight">Right</div>
+       		</section>  <!-- About -->		
         </div>
         <div id="container">    
        		<section class="sectionStyle exp" id="exp">Experience</section>  <!-- Experience -->		

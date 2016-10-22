@@ -136,4 +136,39 @@ span.lastName {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 35px;
+    border: 2px solid #ec6f4f;
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+}
+
+.aboutLeft {
+    width: calc(50%);
+    height: 100%;
+    float: left;
+    background: #909090;
+}
+.aboutRight {
+    width: calc(50%);
+    height: 100%;
+    float: right;
+    background: #777777;
+}
+
+.fa.fa-arrow-down.arrow {
+    position: fixed;
+    font-size: 30px;
+    color: white !important;
+    z-index: 2;
+    bottom: calc(100% - 100vh + 20px);
+    right: 30px;
+}
+
+.fa.fa-arrow-up.arrow {
+    position: fixed;
+    font-size: 30px;
+    color: white !important;
+    z-index: 2;
+    bottom: calc(100% - 100vh + 50px);
+    right: 30px;
 }
