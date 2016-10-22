@@ -1,3 +1,7 @@
+dh_blog:
+    resource: "@DhBlogBundle/Resources/config/routing.yml"
+    prefix:   /blog
+
 dh_main:
     resource: "@DhMainBundle/Resources/config/routing.yml"
     prefix:   /

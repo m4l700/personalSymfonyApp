@@ -1,0 +1,6 @@
+dh_blog_homepage:
+    path:     /
+    defaults: { _controller: DhBlogBundle:Default:index }
+dh_blog_posts:
+    path:     /posts/{id}
+    defaults: { _controller: DhBlogBundle:Default:index }

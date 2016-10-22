@@ -1,0 +1,24 @@
+Dh\BlogBundle\Entity\BlogPost:
+    type: entity
+    table: null
+    repositoryClass: Dh\BlogBundle\Repository\BlogPostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '150'
+        content:
+            type: text
+        category:
+            type: string
+            length: '150'
+            nullable: true
+        date:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -8,6 +8,13 @@
        				<span class="firstName">David</span>
        				<span class="lastName">Holleman</span>
        			</div>
+       			<div class="postsWrapper">
+       			{% for posts in post %}	
+       				<div class="homePost">
+       					<div class="title">{{posts.title}}</div>
+       				</div>		
+       			{% endfor %}
+       			</div>
        		</section> <!-- Home -->		
         </div>
         <div id="container">    
@@ -20,7 +27,10 @@
        		<section class="sectionStyle portfolio" id="portfolio">Portfolio</section>  <!-- Portfolio -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle portfolio" id="contact">Contact</section> <!-- Contact --> 		
+       		<section class="sectionStyle portfolio" id="contact">Contact
+       		<a class="fa fa-comment" aria-hidden="true" target="_blank" href="{{ path('dh_blog_homepage') }}">test</a>		
+
+       		</section> <!-- Contact --> 
         </div>
     </div>
 {% endblock %}
