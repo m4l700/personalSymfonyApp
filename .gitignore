@@ -1,3 +1,4 @@
+<<<<<<< 828af629229424559d350eb37b7365bc25d2d98b
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
@@ -46,3 +47,21 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+=======
+/app/config/parameters.yml
+/build/
+/phpunit.xml
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+/vendor/
+/web/bundles/
+>>>>>>> [Unstable] Personal symfony app WIP
