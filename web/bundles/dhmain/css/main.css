@@ -1,1 +1,89 @@
-test
+* {
+	padding: 0px;
+	margin: 0px;
+	color: white !important;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #d8d8d8;
+}
+
+.mainWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.navMenuWrapper {
+    float: left;
+    height: 100%;
+    width: 75px;
+    position: fixed;
+    background: #222;
+    color: white;
+}
+
+
+
+div#contentWrapper {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+    height: 100%;
+    position: relative;
+}
+
+li {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+li:first-child {
+    background: #ec6f4f;
+}
+
+li > a {
+    font-size: 20px !important;
+    height: 68%;
+    width: 100%;
+    color: #909090 !important;
+}
+
+li:hover a {
+    color: white !important;
+}
+
+a.fa.fa-bars {
+    color: white !important;
+}
+
+a.active {
+    color: white !important;
+}
+
+.navBarFooter li {
+    background: rgba(255, 0, 0, 0);
+    bottom: 0px;
+    position: absolute;
+}
+
+section.sectionStyle {
+    height: 100%;
+    background: #969696;
+    position: relative;
+}
+
+div#container {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+
+section#home {
+    background: url(http://3.bp.blogspot.com/-uuBzhCyCnww/UO_QNX8MDPI/AAAAAAAABXc/cDCVFoocsDk/s1600/Linux+Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

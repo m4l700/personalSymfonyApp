@@ -26,8 +26,11 @@ body {
 
 
 
-div#wrapper {
-    margin-left: 70px;
+div#contentWrapper {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+    height: 100%;
+    position: relative;
 }
 
 li {
@@ -49,10 +52,32 @@ li > a {
     color: #909090 !important;
 }
 
+li:hover a {
+    color: white !important;
+}
+
 a.fa.fa-bars {
     color: white !important;
 }
 
 a.active {
     color: white !important;
+}
+
+.navBarFooter li {
+    background: rgba(255, 0, 0, 0);
+    bottom: 0px;
+    position: absolute;
+}
+
+section.sectionStyle {
+    height: 100%;
+    background: #969696;
+    position: relative;
+}
+
+div#container {
+    float: left;
+    width: 100%;
+    height: 100vh;
 }

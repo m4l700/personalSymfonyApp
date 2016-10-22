@@ -2,22 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{{ asset('/bundles/framework/css/main.css') }}">
+        <title>{% block title %}David Holleman | Technology{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('/bundles/dhmain/css/main.css') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="{{ asset('/bundles/dhmain/js/main.js') }}"></script>
     </head>
     <body>
     <div class="mainWrapper"> <!-- mainWrapper -->
         <div class="navMenuWrapper"> <!-- Sidebar Nav menu -->
             <div class="navMenu">
                 <ul>
-                    <li><a class="fa fa-bars" aria-hidden="true" href="#"></a></li> <!-- Menu -->
-                    <li><a class="fa fa-home active" aria-hidden="true" href="{{path('dh_main_homepage')}}"></a></li> <!-- Home -->
-                    <li><a class="fa fa-user" aria-hidden="true" href="#"></a></li> <!-- About -->
-                    <li><a class="fa fa-rocket" aria-hidden="true" href="#"></a></li> <!-- Experience -->
-                    <li><a class="fa fa-file-text" aria-hidden="true" href="#"></a></li> <!-- Portfolio -->
-                    <li><a class="fa fa-envelope" aria-hidden="true" href="{{path('dh_main_contact')}}"></a></li> <!-- Contact -->
+                    <li><a class="fa fa-bars dhNav" aria-hidden="true" href="#home"></a></li> <!-- Menu -->
+                    <li><a class="fa fa-home dhNav" aria-hidden="true" href="#home"></a></li> <!-- Home -->
+                    <li><a class="fa fa-user dhNav" aria-hidden="true" href="#about"></a></li> <!-- About -->
+                    <li><a class="fa fa-rocket dhNav" aria-hidden="true" href="#exp"></a></li> <!-- Experience -->
+                    <li><a class="fa fa-file-text dhNav" aria-hidden="true" href="#portfolio"></a></li> <!-- Portfolio -->
+                    <li><a class="fa fa-envelope dhNav" aria-hidden="true" href="#contact"></a></li> <!-- Contact -->
+                </ul>
+            </div>
+            <div class="navBarFooter">
+                <ul>
+                    <li><a class="fa fa-facebook-official" aria-hidden="true" href="#"></a></li>
                 </ul>
             </div>
         </div>

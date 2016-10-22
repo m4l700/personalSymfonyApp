@@ -1,17 +1,21 @@
 {% extends 'base.html.twig' %}
 
-
-
 {% block body %}
-
-    {% block stylesheets %}
-        <link href="{{ asset('/css/main.css') }}" type="text/css" rel="stylesheet" />
-    {% endblock %}
-
-    <div id="wrapper">
+    <div id="contentWrapper">
         <div id="container">    
-        	Home
-
+       		<section class="sectionStyle frontPage" id="home"></section>  		
+        </div>
+        <div id="container">    
+       		<section class="sectionStyle about" id="about">About</section>  		
+        </div>
+        <div id="container">    
+       		<section class="sectionStyle exp" id="exp">Experience</section>  		
+        </div>
+        <div id="container">    
+       		<section class="sectionStyle portfolio" id="portfolio">Portfolio</section>  		
+        </div>
+        <div id="container">    
+       		<section class="sectionStyle portfolio" id="contact">Contact</section>  		
         </div>
     </div>
 {% endblock %}
