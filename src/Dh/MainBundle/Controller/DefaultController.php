@@ -3,18 +3,23 @@
 namespace Dh\MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Dh\BlogBundle\Entity\BlogPost;
+//use Dh\BlogBundle\Entity\BlogPost;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-    	$repository = $this->getDoctrine()
+    	$repositoryPost = $this->getDoctrine()
     		->getRepository('DhBlogBundle:BlogPost');
-    	$post = $repository->findByCategory('homepage');
+    	$post = $repositoryPost->findByCategory('homepage');
+
+    	$repositoryImage = $this->getDoctrine()
+    		->getRepository('DhBlogBundle:BlogPostImageUrl');
+    	$imgUrl = $repositoryImage->findAll();
 
         return $this->render('DhMainBundle:Default:index.html.twig', [
-        	'post' => $post,
+        	'post' 		=> $post,
+        	'imgurl' 	=> $imgUrl,
         	]);
     }
 
