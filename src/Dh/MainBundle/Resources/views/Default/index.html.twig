@@ -1,21 +1,26 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div id="contentWrapper">
+    <div id="contentWrapper"> <!-- Content -->
         <div id="container">    
-       		<section class="sectionStyle frontPage" id="home"></section>  		
+       		<section class="sectionStyle frontPage" id="home">
+       			<div class="nameWrapper">
+       				<span class="firstName">David</span>
+       				<span class="lastName">Holleman</span>
+       			</div>
+       		</section> <!-- Home -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle about" id="about">About</section>  		
+       		<section class="sectionStyle about" id="about">About</section>  <!-- About -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle exp" id="exp">Experience</section>  		
+       		<section class="sectionStyle exp" id="exp">Experience</section>  <!-- Experience -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle portfolio" id="portfolio">Portfolio</section>  		
+       		<section class="sectionStyle portfolio" id="portfolio">Portfolio</section>  <!-- Portfolio -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle portfolio" id="contact">Contact</section>  		
+       		<section class="sectionStyle portfolio" id="contact">Contact</section> <!-- Contact --> 		
         </div>
     </div>
 {% endblock %}

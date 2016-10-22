@@ -8,6 +8,9 @@
 
 body {
     background: #d8d8d8;
+    overflow-x: hidden;
+    overflow: hidden;
+    font-family: 'Ralewaybold', sans-serif;
 }
 
 .mainWrapper {
@@ -83,7 +86,27 @@ div#container {
 }
 
 section#home {
-    background: url(http://3.bp.blogspot.com/-uuBzhCyCnww/UO_QNX8MDPI/AAAAAAAABXc/cDCVFoocsDk/s1600/Linux+Wallpaper.jpg);
+	background: url(/bundles/dhmain/images/mainImage.jpg);
+    /* background: url(http://3.bp.blogspot.com/-uuBzhCyCnww/UO_QNX8MDPI/AAAAAAAABXc/cDCVFoocsDk/s1600/Linux+Wallpaper.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.nameWrapper {
+    text-align: center;
+    line-height: 20vh;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+span.firstName {
+    background: #ec6f4f;
+    padding: 10px;
+}
+
+span.lastName {
+    background: #222222;
+    padding: 10px;
+    color: white !important;
 }
