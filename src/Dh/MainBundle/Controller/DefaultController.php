@@ -17,6 +17,8 @@ class DefaultController extends Controller
     		->getRepository('DhBlogBundle:BlogPostImageUrl');
     	$imgUrl = $repositoryImage->findAll();
 
+    	//$flash = $this->addFlash('notice', 'Navigate with the menu on the left side');
+
         return $this->render('DhMainBundle:Default:index.html.twig', [
         	'post' 		=> $post,
         	'imgurl' 	=> $imgUrl,

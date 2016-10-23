@@ -41,10 +41,34 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-
-    $("#container:first-child").mousemove(function(e){
-      $('.sectionStyle .frontPage').css({'top': e.clientY - 20, 'left': e.clientX - 20});
+        
+    /*
+    $('.fa-arrow-up').click(function(){
+      var current = $('.sectionStyle');
+      current.prev().before(current);
     });
+    $('fa-arrow-down').click(function(){
+      var current = $('.sectionStyle');
+      current.next().after(current);
+    });
+    */
+
+    //$(document).ready(function() {
+    //var movementStrength = 25;
+    //var height = movementStrength / $(window).height();
+    //var width = movementStrength / $(window).width();
+    //$("#container").mousemove(function(e){
+    //          var pageX = e.pageX - ($(window).width() / 2);
+    //          var pageY = e.pageY - ($(window).height() / 2);
+    //          var newvalueX = width * pageX * -1 - 25;
+    //          var newvalueY = height * pageY * -1 - 50;
+    //          $('.frontPage').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    //});
+    //});
+
+    //$("#container").mousemove(function(e){
+    //  $('.frontPage').css({'top': e.clientY - 20, 'left': e.clientX - 20});
+    //});
 
 
 });
