@@ -41,7 +41,14 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-        
+    //Scrolllock
+    $('.scrollock').toggle(function(){
+        $('body').addClass('scrolllockToggle');
+    }, function() {
+        $('body').removeClass('scrolllockToggle');
+    });
+
+
     /*
     $('.fa-arrow-up').click(function(){
       var current = $('.sectionStyle');

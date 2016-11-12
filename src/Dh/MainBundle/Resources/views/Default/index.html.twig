@@ -3,13 +3,15 @@
 {% block body %}
     <div id="contentWrapper"> <!-- Content -->
         <div id="container">   
+        	<!-- <a class="scrolllock">scroll</a> WIP idea -->
         	<a href="#home" class="fa fa-arrow-up arrow" aria-hidden="true"></a> 
         	<a href="#about" class="fa fa-arrow-down arrow" aria-hidden="true"></a>
        		<section class="sectionStyle frontPage" id="home"> <!-- Home -->
        			<div class="nameWrapper">
-       				<span class="firstsection">I am</span>
+       				<span class="firstsection">I'm</span>
        				<span class="firstName">David</span>
-       				<span class="lastName">Holleman</span>
+       				<span class="lastName">Holleman</span></br>
+       				<p class="nameSubTitle">Web and technology geek.</p>
        			</div>
        			<div class="postsWrapper">
        			{% for posts in post %}			
@@ -29,11 +31,11 @@
        			{% for aboutsection in about %}
        				<div class="aboutInner">
        					<h1 class="titleAbout" style="color:black;">{{aboutsection.title}}</h1>
-       					<div class="introText" style="color:#909090;"><div class="portrait"></div>{{aboutsection.intro}}</div>
+       					<div class="introText" style="color:#909090;"><div class="portrait"></div>{{aboutsection.intro | raw}}</div>
        					<div class="aboutInfo">
        						<ul class="cvInfo">
        							<li>
-       								<div class="infoLeft">
+       								<div class="infoLeft dob">
        									Date of birth:
        								</div>
        								<div class="infoRight">
@@ -41,7 +43,7 @@
        								</div>
        							</li>
        							<li>
-       								<div class="infoLeft">
+       								<div class="infoLeft lang">
        									Languages:
        								</div>
        								<div class="infoRight">
@@ -49,7 +51,7 @@
        								</div>
        							</li>
        							<li>
-       								<div class="infoLeft">
+       								<div class="infoLeft skills">
        									Skills:
        								</div>
        								<div class="infoRight">
@@ -57,7 +59,7 @@
        								</div>
        							</li>
        							<li>
-       								<div class="infoLeft">
+       								<div class="infoLeft hobbies">
        									Hobbies:
        								</div>
        								<div class="infoRight">
@@ -65,7 +67,7 @@
        								</div>
        							</li>
        							<li>
-       								<div class="infoLeft">
+       								<div class="infoLeft website">
        									Website:
        								</div>
        								<div class="infoRight">
@@ -74,9 +76,9 @@
        							</li>
        						</ul
        					</div>
-       					<div class="aboutText" style="color:#909090;">{{aboutsection.maintext}}</div>
+       					<div class="aboutText" style="color:#909090;">{{aboutsection.maintext | raw}}</div>
        					<div class="aboutButtons">
-	       					<a class="buttonContact" href="#">Contact me</a> <!-- Contact button -->
+	       					<a class="buttonContact" href="#contact">Contact me</a> <!-- Contact button -->
 	       					<a class="buttonCV" href="#">Download resume(CV)</a> <!-- CV button -->
        					</div>
        				</div>

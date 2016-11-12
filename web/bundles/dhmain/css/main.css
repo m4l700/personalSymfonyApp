@@ -271,3 +271,33 @@ a.buttonCV {
     background-size: cover;
     margin-bottom: 10px;
 }
+
+.dob:before {
+    content: "\f007";
+    font: normal normal normal 15px/1 FontAwesome;
+}
+.lang:before {
+    content: "\f1ab";
+    font: normal normal normal 15px/1 FontAwesome;
+}
+.skills:before {
+    content: "\f135";
+    font: normal normal normal 15px/1 FontAwesome;
+}
+.hobbies:before {
+    content: "\f1e3";
+    font: normal normal normal 15px/1 FontAwesome;
+}
+.website:before {
+    content: "\f14c";
+    font: normal normal normal 15px/1 FontAwesome;
+}
+
+a.scrolllock {
+    position: fixed;
+    font-size: 30px;
+    color: white !important;
+    z-index: 2;
+    bottom: calc(100% - 100vh + 80px);
+    right: 30px;
+}
