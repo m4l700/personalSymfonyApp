@@ -1,7 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	color: white !important;
+	color: white;
     list-style: none;
     text-decoration: none;
 }
@@ -36,18 +36,18 @@ div#contentWrapper {
     position: relative;
 }
 
-li {
+.navLi {
     width: 75px;
     height: 75px;
     text-align: center;
     line-height: 75px;
     border-bottom: 1px solid #2f2f2f;
 }
-
+/*
 li:first-child {
     background: #ec6f4f;
 }
-
+*/
 li > a {
     font-size: 20px !important;
     height: 68%;
@@ -151,13 +151,19 @@ span.lastName {
     width: calc(50%);
     height: 100%;
     float: left;
-    background: #909090;
+    /* background: #909090; */
+	background: url(https://c3.staticflickr.com/8/7040/6843750794_99e6fd65e7_h.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .aboutRight {
     width: calc(50%);
     height: 100%;
     float: right;
-    background: #777777;
+    background: #ffffff;
+    color: black;
+    overflow: scroll;
 }
 
 .fa.fa-arrow-down.arrow {
@@ -176,4 +182,92 @@ span.lastName {
     z-index: 2;
     bottom: calc(100% - 100vh + 50px);
     right: 30px;
+}
+
+.aboutInner {
+    padding: 50px;
+}
+
+
+h1.titleAbout {
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #ec6f4f;
+}
+
+.introText {
+    padding-top: 30px;
+}
+
+.aboutText {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+ul.cvInfo {
+    padding: 20px 0px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+ul.cvInfo li {
+    border-bottom: 1px solid #ececec;
+    padding-top: 5px;
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    word-spacing: 0.1em;
+}
+
+.infoLeft {
+    width: 50%;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    color: #909090;
+}
+
+.infoRight {
+    width: 50%;
+    float: right;
+    text-align: right;
+    color: #909090;
+}
+
+a.buttonContact {
+    color: white;
+    border: 3px solid #222222;
+    padding: 10px;
+    font-size: 23px;
+    background: #222222;
+    text-transform: uppercase;
+    word-spacing: 0.15em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+a.buttonCV {
+    color: white;
+    border: 3px solid #ec6f4f;
+    padding: 10px;
+    font-size: 23px;
+    background: #ec6f4f;
+    text-transform: uppercase;
+    word-spacing: 0.15em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.portrait {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 4px solid #ec6f4f;
+    padding: 10px;
+    background: url(https://c1.staticflickr.com/3/2814/buddyicons/75617896@N08_r.jpg?1375813209#75617896@N08);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
 }

@@ -24,8 +24,64 @@
         </div>
         <div id="container">    
        		<section class="sectionStyle about" id="about"> <!-- About -->	
-       			<div class="aboutLeft">Left</div>
-       			<div class="aboutRight">Right</div>
+       			<div class="aboutLeft"></div>
+       			<div class="aboutRight">
+       			{% for aboutsection in about %}
+       				<div class="aboutInner">
+       					<h1 class="titleAbout" style="color:black;">{{aboutsection.title}}</h1>
+       					<div class="introText" style="color:#909090;"><div class="portrait"></div>{{aboutsection.intro}}</div>
+       					<div class="aboutInfo">
+       						<ul class="cvInfo">
+       							<li>
+       								<div class="infoLeft">
+       									Date of birth:
+       								</div>
+       								<div class="infoRight">
+       									10-12-1991
+       								</div>
+       							</li>
+       							<li>
+       								<div class="infoLeft">
+       									Languages:
+       								</div>
+       								<div class="infoRight">
+       									English, Dutch
+       								</div>
+       							</li>
+       							<li>
+       								<div class="infoLeft">
+       									Skills:
+       								</div>
+       								<div class="infoRight">
+       									Frontend/backend webdevelopment, linux server.
+       								</div>
+       							</li>
+       							<li>
+       								<div class="infoLeft">
+       									Hobbies:
+       								</div>
+       								<div class="infoRight">
+       									Photography, Guitar, Technology, History.
+       								</div>
+       							</li>
+       							<li>
+       								<div class="infoLeft">
+       									Website:
+       								</div>
+       								<div class="infoRight">
+       									<a href="www.davidholleman.com" style="color:#909090;">davidholleman.com</a>
+       								</div>
+       							</li>
+       						</ul
+       					</div>
+       					<div class="aboutText" style="color:#909090;">{{aboutsection.maintext}}</div>
+       					<div class="aboutButtons">
+	       					<a class="buttonContact" href="#">Contact me</a> <!-- Contact button -->
+	       					<a class="buttonCV" href="#">Download resume(CV)</a> <!-- CV button -->
+       					</div>
+       				</div>
+       			{% endfor %}
+       			</div>
        		</section>  <!-- About -->		
         </div>
         <div id="container">    

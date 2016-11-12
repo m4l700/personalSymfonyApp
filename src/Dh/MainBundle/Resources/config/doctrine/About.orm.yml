@@ -1,0 +1,22 @@
+Dh\MainBundle\Entity\About:
+    type: entity
+    table: null
+    repositoryClass: Dh\MainBundle\Repository\AboutRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '150'
+        intro:
+            type: text
+        maintext:
+            type: text
+        pdflinkcv:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
