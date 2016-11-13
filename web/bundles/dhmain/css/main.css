@@ -86,7 +86,7 @@ a.active {
 
 section.sectionStyle {
     height: 100%;
-    background: #969696;
+    background: #ffffff;
     position: relative;
 }
 
@@ -144,7 +144,7 @@ span.lastName {
 }
 
 .title {
-    height: 100%;
+    height: 300px;
     width: 100%;
     background: #ec6f4f;
     text-align: center;
@@ -153,9 +153,9 @@ span.lastName {
     text-transform: uppercase;
     font-size: 35px;
     border: 2px solid #ec6f4f;
-    -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+    /*-webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75); */
 }
 
 .aboutLeft {
@@ -347,4 +347,22 @@ span.titleText {
     padding: 10px;
     font-weight: bold;
     letter-spacing: -2px;
+}
+.postTitleTop {
+    background: #ec6f4f;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.expWrapper {
+	text-align: center;
+	color: black;
+}
+.row.skillLabels {
+    height: 300px;
+    font-size: 28px;
+}
+.container.expWrapper {
+    padding-top: 10%;
 }

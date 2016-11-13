@@ -20,8 +20,9 @@
 		       				<h2 class="sectionTitle"><span class="titleText">Recently pusblished articles</span></h2>
 		       			{% for posts in post %}			
 		       				<article class="homePost col-md-4 col-sm-12">
-		       				<a class="clickablepost" href="/blog/posts/{{posts.id}}">
-		       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;"><span class="postTitle">{{posts.title}}</span></div>	
+		       				<a class="clickablepost" href="/blog/posts/{{posts.id}}" target="_blank">
+		       				<div class="postTitleTop"><span class="label label-primary">New!</span>{{posts.title}}</div>
+		       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;"><span class="postTitle"></span></div>	
 		       				</a>
 		       				</article>			
 		       			{% endfor %}
@@ -94,23 +95,24 @@
         </div>
         <div id="container">    
        		<section class="sectionStyle exp" id="exp">
-       			<div class="container">
+       			<div class="container expWrapper">
        				<div class="row">
-       					<h1> Skills w/e </h1>
+       					<h1 style="color: black;"> My Skills, and learning curve </h1>
        				</div>
-       				<div class="row">
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
-       					<span class="label label-default">Default</span>
+       				<div class="row skillLabels">
+       					<span class="label label-default">html</span>
+       					<span class="label label-default">css</span>
+       					<span class="label label-default">php</span>
+       					<span class="label label-default">JavaScript</span>
+       					<span class="label label-default">Jquery</span>
+       					<span class="label label-default">Python</span>
+       					<span class="label label-default">Linux</span>
+       					<span class="label label-default">CLI</span>
+       					<span class="label label-default">NGINX/Apache</span>
+       					<span class="label label-default">Bootstrap</span>
+       					<span class="label label-default">AngularJS</span>
+       					<span class="label label-default">SQL</span>
+       					<span class="label label-default">GIT</span>
        				</div>
        			</div>
        		</section>  <!-- Experience -->		
