@@ -7,21 +7,27 @@
         	<a href="#home" class="fa fa-arrow-up arrow" aria-hidden="true"></a> 
         	<a href="#about" class="fa fa-arrow-down arrow" aria-hidden="true"></a>
        		<section class="sectionStyle frontPage" id="home"> <!-- Home -->
-       			<div class="nameWrapper">
-       				<span class="firstsection">I'm</span>
-       				<span class="firstName">David</span>
-       				<span class="lastName">Holleman</span></br>
-       				<p class="nameSubTitle">Web and technology geek.</p>
+       			<div class="container tophalf">
+       				<div class="nameWrapper">
+	       				<span class="firstsection">I'm</span>
+	       				<span class="firstName">David</span>
+	       				<span class="lastName">Holleman</span>
+       				</div>
        			</div>
-       			<div class="postsWrapper">
-       			{% for posts in post %}			
-       				<div class="homePost">
-       				<a class="clickablepost" href="/blog/posts/{{posts.id}}">
-       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;">{{posts.title}}</div>	
-       				</a>
-       				</div>			
-       			{% endfor %}
-       			</div>
+       			<div class="bottomhalf">
+	       			<div class="container containerArticles">
+		       			<div class="row rowArticles">
+		       				<h2 class="sectionTitle"><span class="titleText">Recently pusblished articles</span></h2>
+		       			{% for posts in post %}			
+		       				<article class="homePost col-md-4 col-sm-12">
+		       				<a class="clickablepost" href="/blog/posts/{{posts.id}}">
+		       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;">{{posts.title}}</div>	
+		       				</a>
+		       				</article>			
+		       			{% endfor %}
+		       			</div>
+		       		</div>
+		       	</div>
        		</section> 	<!-- Home -->	
         </div>
         <div id="container">    
