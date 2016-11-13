@@ -9,17 +9,14 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-    	$repositoryPost = $this->getDoctrine()
-    		->getRepository('DhBlogBundle:BlogPostEntity');
-    	$post = $repositoryPost->findByCategory('homepage');
+    	$post = $this->getDoctrine()
+    		->getRepository('DhBlogBundle:BlogPostEntity')->findByCategory('homepage');
 
-    	$repositoryImage = $this->getDoctrine()
-    		->getRepository('DhBlogBundle:BlogPostImageUrl');
-    	$imgUrl = $repositoryImage->findAll();
+    	$imgUrl = $this->getDoctrine()
+    		->getRepository('DhBlogBundle:BlogPostImageUrl')->findAll();
 
-    	$repositoryAbout = $this->getDoctrine()
-    		->getRepository('DhMainBundle:About');
-    	$aboutEnt = $repositoryAbout->findAll();
+    	$aboutEnt = $this->getDoctrine()
+    		->getRepository('DhMainBundle:About')->findAll();
 
     	//$flash = $this->addFlash('notice', 'Navigate with the menu on the left side');
 

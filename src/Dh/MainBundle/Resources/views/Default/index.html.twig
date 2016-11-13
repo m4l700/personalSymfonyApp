@@ -21,7 +21,7 @@
 		       			{% for posts in post %}			
 		       				<article class="homePost col-md-4 col-sm-12">
 		       				<a class="clickablepost" href="/blog/posts/{{posts.id}}">
-		       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;">{{posts.title}}</div>	
+		       					<div class="title" style="background: url({{posts.imgurl}}); background-size: cover;"><span class="postTitle">{{posts.title}}</span></div>	
 		       				</a>
 		       				</article>			
 		       			{% endfor %}
@@ -93,7 +93,27 @@
        		</section>  <!-- About -->		
         </div>
         <div id="container">    
-       		<section class="sectionStyle exp" id="exp">Experience</section>  <!-- Experience -->		
+       		<section class="sectionStyle exp" id="exp">
+       			<div class="container">
+       				<div class="row">
+       					<h1> Skills w/e </h1>
+       				</div>
+       				<div class="row">
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       					<span class="label label-default">Default</span>
+       				</div>
+       			</div>
+       		</section>  <!-- Experience -->		
         </div>
         <div id="container">    
        		<section class="sectionStyle portfolio" id="portfolio">Portfolio</section>  <!-- Portfolio -->		

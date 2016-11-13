@@ -16,6 +16,9 @@ body {
 a:hover {
     text-decoration: none !important;
 }
+a:active {
+	text-decoration: none !important;
+}
 
 .mainWrapper {
     width: 100%;
@@ -75,6 +78,10 @@ a.active {
     background: rgba(255, 0, 0, 0);
     bottom: 0px;
     position: absolute;
+    width: 75px;
+    height: 65px;
+    text-align: center;
+    line-height: 75px;
 }
 
 section.sectionStyle {
